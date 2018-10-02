@@ -5,3 +5,10 @@ C:\Users\Dy1an\source\repos\ConsoleApp9\ConsoleApp9\obj\Debug\OpenHouse.csprojAs
 C:\Users\Dy1an\source\repos\ConsoleApp9\ConsoleApp9\obj\Debug\OpenHouse.csproj.CoreCompileInputs.cache
 C:\Users\Dy1an\source\repos\ConsoleApp9\ConsoleApp9\obj\Debug\ConsoleApp9.exe
 C:\Users\Dy1an\source\repos\ConsoleApp9\ConsoleApp9\obj\Debug\ConsoleApp9.pdb
+C:\Users\paper\Open-House-Project\ConsoleApp9\bin\Debug\ConsoleApp9.exe.config
+C:\Users\paper\Open-House-Project\ConsoleApp9\bin\Debug\ConsoleApp9.exe
+C:\Users\paper\Open-House-Project\ConsoleApp9\bin\Debug\ConsoleApp9.pdb
+C:\Users\paper\Open-House-Project\ConsoleApp9\obj\Debug\OpenHouse.csprojAssemblyReference.cache
+C:\Users\paper\Open-House-Project\ConsoleApp9\obj\Debug\OpenHouse.csproj.CoreCompileInputs.cache
+C:\Users\paper\Open-House-Project\ConsoleApp9\obj\Debug\ConsoleApp9.exe
+C:\Users\paper\Open-House-Project\ConsoleApp9\obj\Debug\ConsoleApp9.pdb

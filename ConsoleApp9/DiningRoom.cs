@@ -10,31 +10,34 @@ namespace OpenHouse
     {
         static public bool Furniture()
         {
-            int answer = 0;
             bool willContinue = true;
-            typeWriter.TextMod("The Dining room has a China Cabinet, a table and a beautiful chandelier. What would you like to know about?");
+            typeWriter.TextMod("The Dining room has a China Cabinet, a table and a beautiful chandelier. What would you like to know about? \n");
             do
             {
                 typeWriter.TextMod("1) Cabinet");
                 typeWriter.TextMod("2) Table");
                 typeWriter.TextMod("3) Chandelier");
                 typeWriter.TextMod("4) Go somewhere else.");
-                answer = int.Parse(Console.ReadLine());
+
+                string answer = Console.ReadLine();
                 Console.Clear();
                 switch (answer)
                 {
-                    case 1:
-                        typeWriter.TextMod("It's a china cabinet...");
+                    case "1":
+                        typeWriter.TextMod("It's a china cabinet...\n");
                         break;
-                    case 2:
-                        typeWriter.TextMod("This table is made of mahogany.");
+                    case "2":
+                        typeWriter.TextMod("This table is made of mahogany.\n");
                         break;
-                    case 3:
-                        typeWriter.TextMod("The chandelier is very nice.");
+                    case "3":
+                        typeWriter.TextMod("The chandelier is very nice.\n");
+                        break;
+                    case "4":
+                        typeWriter.TextMod("\n");
+                        willContinue = false;
                         break;
                     default:
-                        Console.WriteLine();
-                        willContinue = false;
+                        Console.WriteLine("Sorry, that wasn't a choice, try again. \n");
                         break;
                 }
             }

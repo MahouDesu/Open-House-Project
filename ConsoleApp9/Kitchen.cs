@@ -10,32 +10,35 @@ namespace OpenHouse
     {
         static public bool Appliances()
         {
-            int answer = 0;
             bool willContinue = true;
-            typeWriter.TextMod("This Kitchen comes with a microwave, fridge and an oven.");
+            typeWriter.TextMod("This Kitchen comes with a microwave, fridge and an oven.\n");
             do
             {
                 typeWriter.TextMod("1) Microwave");
                 typeWriter.TextMod("2) Fridge");
                 typeWriter.TextMod("3) Oven");
                 typeWriter.TextMod("4) Go somewhere else.");
-                answer = int.Parse(Console.ReadLine());
+
+                string answer = Console.ReadLine();
                 Console.Clear();
                 switch (answer)
                 {
 
-                    case 1:
-                        typeWriter.TextMod("This microwave is stainless steel and runs at 1000 watts to ensure proper heating throughout your meal.");
+                    case "1":
+                        typeWriter.TextMod("This microwave is stainless steel and runs at 1000 watts to ensure proper heating throughout your meal.\n");
                         break;
-                    case 2:
-                        typeWriter.TextMod("This fridge comes with a water and ice dispenser built into it!");
+                    case "2":
+                        typeWriter.TextMod("This fridge comes with a water and ice dispenser built into it!\n");
                         break;
-                    case 3:
-                        typeWriter.TextMod("This oven has an induction stovetop.");
+                    case "3":
+                        typeWriter.TextMod("This oven has an induction stovetop.\n");
+                        break;
+                    case "4":
+                        typeWriter.TextMod("\n");
+                        willContinue = false;
                         break;
                     default:
-                        Console.WriteLine();
-                        willContinue = false;
+                        Console.WriteLine("Sorry, that wasn't a choice, try again. \n");
                         break;
 
                 }
