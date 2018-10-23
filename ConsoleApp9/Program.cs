@@ -10,7 +10,6 @@ namespace OpenHouse
     {
         static void Main(string[] args)
         {
-            int answer = 0;
             bool willContinue = true;
             typeWriter.TextMod("Hello! Welcome to our open house!");
             do
@@ -22,31 +21,31 @@ namespace OpenHouse
                 typeWriter.TextMod("4) Bedroom");
                 typeWriter.TextMod("5) Exit");
 
-                answer = int.Parse(Console.ReadLine());
+                string answer = Console.ReadLine();
                 Console.Clear();
                 switch (answer)
                 {
-                    case 1:
+                    case "1":
                         {
                             Kitchen.Appliances();
                             break;
                         }
-                    case 2:
+                    case "2":
                         {
                             LivingRoom.Furniture();
                             break;
                         }
-                    case 3:
+                    case "3":
                         {
                             DiningRoom.Furniture();
                             break;
                         }
-                    case 4:
+                    case "4":
                         {
                             BedRoom.Furniture();
                             break;
                         }
-                    case 5:
+                    case "5":
                         {
                             willContinue = false;
                             break;
